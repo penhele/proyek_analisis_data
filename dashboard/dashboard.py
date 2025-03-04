@@ -95,8 +95,8 @@ def pengaruh_cuaca_terhadap_penyewaan_jam(df):
     plt.legend(title="Kondisi Cuaca")
     st.pyplot(plt)
 
-day_df = pd.read_csv("day_clean.csv")
-hour_df = pd.read_csv("hour_clean.csv")
+day_df = pd.read_csv("dashboard/day_clean.csv")
+hour_df = pd.read_csv("dashboard/hour_clean.csv")
 
 st.header("Visualisasi Penyewaan Sepeda pada Berbagai Kondisi Cuaca")
 
