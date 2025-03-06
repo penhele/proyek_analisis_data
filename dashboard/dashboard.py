@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.title('Analisis Bike Sharing Dataset')
+st.title('📊 Analisis Bike Sharing Dataset')
 
 df = pd.read_csv('dashboard/all_df.csv')
 
@@ -19,6 +19,8 @@ def home_page(df):
         df = df.drop_duplicates(subset=['instantDay'])
 
     st.dataframe(df)
+
+    st.write('Menu jam merupakan rincian dari menu hari, yang memberikan detail tentang kejadian setiap harinya. Seperti yang kita ketahui, satu hari terdiri dari 24 jam. Oleh karena itu, pada kolom "hr" (menu jam), waktu dimulai dari 0 hingga 23.')  
 
 def analysis_page(df):
     def visualize_seasonal_impact(df):
